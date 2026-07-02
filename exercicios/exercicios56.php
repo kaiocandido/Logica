@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 function pascalsTriangleRows(int $rowCount)
 {
     // array que vai guardar todas as linhas do triângulo
@@ -36,3 +37,36 @@ function pascalsTriangleRows(int $rowCount)
     // retorna o triângulo completo
     return $result;
 }
+=======
+declare(strict_types=1);
+
+function saddlePoints(array $matrix): array
+{   
+   
+    $resultado = [];
+
+    foreach ($matrix as $rowIndex => $row) {
+        foreach ($row as $colIndex => $value) {
+            $maiorDalinha = max($row);
+
+            if ($value !== $maiorDalinha) {
+                continue;
+            }
+            
+            $colunaMatriz = [];
+
+            foreach ($matrix as $linha) {
+                $colunaMatriz[] = $linha[$colIndex];
+            }
+            $menorDaColuna = min($colunaMatriz);
+
+            if ($value === $menorDaColuna) {
+                $resultado[] = ["row" => $rowIndex, "column" => $colIndex];
+            }
+        }
+}
+
+    return $resultado;
+}
+
+>>>>>>> 14af7cb66ca64619c49cd78ecdb416b66522cac4

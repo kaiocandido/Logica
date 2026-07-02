@@ -1,5 +1,7 @@
 <?php
 
+<<<<<<< HEAD
+=======
 class KindergartenGarden
 {   
     private $diagram;
@@ -64,3 +66,4 @@ class KindergartenGarden
 $test = new KindergartenGarden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV");
 
 echo $test->plants("Alice");
+>>>>>>> fc6cda63c4850517398b46b83f861d607c1001e6
